@@ -1,0 +1,8 @@
+//
+//  Expecta.debug.xcconfig
+//  Expecta
+//
+//  Created by Fanming on 15/12/19.
+//  Copyright © 2015年 Peter Jihoon Kim. All rights reserved.
+//
+OTHER_LDFLAGS = -ObjC -all_load
