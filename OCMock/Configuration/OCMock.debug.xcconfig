@@ -1,0 +1,8 @@
+//
+//  OCMock.debug.xcconfig
+//  OCMock
+//
+//  Created by Fanming on 15/12/19.
+//  Copyright © 2015年 Mulle Kybernetik. All rights reserved.
+//
+OTHER_LDFLAGS = -ObjC -all_load

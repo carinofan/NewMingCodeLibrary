@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:expecta/Expecta.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OCMock/OCMock.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:HTTPRequestLibrary/HTTPRequestLibrary.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NewMingCodeLibrary/NewMingCodeLibrary.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,9 @@
+//
+//  HTTPRequestTest.release.xcconfig
+//  HTTPRequestLibrary
+//
+//  Created by Fanming on 15/12/19.
+//  Copyright © 2015年 Guangzhou Ligo Information Technology Co.,Ltd. All rights reserved.
+//
+USER_HEADER_SEARCH_PATHS = ../**
+OTHER_LDFLAGS = -ObjC -all_load
