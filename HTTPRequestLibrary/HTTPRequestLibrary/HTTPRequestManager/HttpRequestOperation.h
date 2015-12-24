@@ -24,6 +24,10 @@
 
 - (BOOL)isFinished;
 
+- (void)cancel;
+
+- (BOOL)isCancelled;
+
 - (void)setUploadProgressBlock:(nullable void (^)(NSUInteger bytesWritten, long long tatalBytesWritten, long long totalBytesExpectedToWrite))block;
 
 - (void)setDownloadProgressBlock:(nullable void (^)(NSUInteger bytesRead, long long tatalBytesRead, long long totalBytesExpectedToRead))block;

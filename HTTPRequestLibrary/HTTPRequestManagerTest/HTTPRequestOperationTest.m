@@ -28,7 +28,7 @@
     [super tearDown];
 }
 
-- (void)testPauseResumeStallsHTTPThred{
+- (void)testPauseResumeStallsHTTPThread{
     [Expecta setAsynchronousTestTimeout:5.0];
     
     __block id blockResponseObject = nil;
@@ -55,6 +55,37 @@
     expect([operation isFinished]).will.beTruthy();
     expect(blockError).will.beNil();
     expect(blockResponseObject).willNot.beNil();
+}
+
+- (void)testPauseResumeCancelStallsHTTPThread{
+    [Expecta setAsynchronousTestTimeout:5.0];
+    
+    __block id blockResponseObject = nil;
+    __block id blockError = nil;
+    
+    NSString *baseURL = @"https://www.baidu.com";
+    HTTPRequestManager *manager = [HTTPRequestManager manager];
+    HTTPRequestDataModel *data = [[HTTPRequestDataModel alloc]init];
+    data.baseString = baseURL;
+    data.parameters = nil;
+    HttpRequestOperation *operation = [manager PostXml:data success:^(id responseObject) {
+        blockResponseObject = responseObject;
+        //        NSLog(@"%@",responseObject);
+    } failure:^(id responseObject, NSError *error) {
+        blockError = error;
+        //        NSLog(@"%@",error);
+    }];
+    [operation start];
+    [operation pause];
+    expect([operation isPaused]).will.beTruthy();
+    
+    [operation resume];
+    expect([operation isExecuting]).will.beTruthy();
+    
+    [operation cancel];
+    expect([operation isCancelled]).will.beTruthy();
+    expect(blockError).will.beNil();
+    expect(blockResponseObject).will.beNil();
 }
 
 @end

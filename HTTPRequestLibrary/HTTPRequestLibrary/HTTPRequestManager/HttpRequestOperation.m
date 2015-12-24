@@ -48,6 +48,14 @@
     return [self.operation isFinished];
 }
 
+- (void)cancel{
+    [self.operation cancel];
+}
+
+- (BOOL)isCancelled{
+    return [self.operation isCancelled];
+}
+
 - (void)setUploadProgressBlock:(void (^)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite))block{
     [self.operation setUploadProgressBlock:^(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite) {
         block(bytesWritten, totalBytesWritten, totalBytesExpectedToWrite);
