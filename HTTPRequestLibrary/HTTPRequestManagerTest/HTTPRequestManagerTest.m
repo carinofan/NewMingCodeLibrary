@@ -10,6 +10,7 @@
 #import "Expecta.h"
 #import "OCMock.h"
 #import "HTTPRequestManager.h"
+#import "HTTPRequestDataModel.h"
 
 @interface HTTPRequestManagerTest : XCTestCase
 
@@ -36,7 +37,11 @@
     
     NSString *baseURL = @"http://itech.billionscatalog.net/getservers/";
     NSDictionary *dictionary = [NSDictionary dictionaryWithObject:@"5" forKey:@"Ver"];
-    [self.manager PostXml:baseURL parameters:dictionary success:^(id responseObject) {
+    HTTPRequestDataModel *data = [[HTTPRequestDataModel alloc]init];
+    data.baseString = baseURL;
+    data.parameters = dictionary;
+    data.supportHttps = NO;
+    [self.manager PostXml:data success:^(id responseObject) {
         blockResponseObject = responseObject;
     } failure:^(id responseObject, NSError *error) {
         blockError = error;
@@ -52,12 +57,14 @@
     
     NSString *baseURL = @"https://itech.billionscatalog.net/getservers/";
     NSDictionary *dictionary = [NSDictionary dictionaryWithObject:@"5" forKey:@"Ver"];
-    self.manager.supportHttps = YES;
-    [self.manager PostXml:baseURL parameters:dictionary success:^(id responseObject) {
+    HTTPRequestDataModel *data = [[HTTPRequestDataModel alloc]init];
+    data.baseString = baseURL;  
+    data.parameters = dictionary;
+    [self.manager PostXml:data success:^(id responseObject) {
         blockResponseObject = responseObject;
     } failure:^(id responseObject, NSError *error) {
         blockError = error;
-    }];
+    }]; 
     
     expect(blockResponseObject).willNot.beNil();
     expect(blockError).will.beNil();
@@ -68,7 +75,10 @@
     __block id blockError = nil;
     
     NSString *baseURL = @"https://www.baidu.com";
-    [self.manager PostXml:baseURL parameters:nil success:^(id responseObject) {
+    HTTPRequestDataModel *data = [[HTTPRequestDataModel alloc]init];
+    data.baseString = baseURL;
+    data.parameters = nil;
+    [self.manager PostXml:data success:^(id responseObject) {
         blockResponseObject = responseObject;
     } failure:^(id responseObject, NSError *error) {
         blockError = error;
@@ -83,7 +93,10 @@
     __block id blockError = nil;
     
     NSString *baseURL = @"https://www.baidu.com";
-    [self.manager Head:baseURL parameters:nil success:^(id responseObject) {
+    HTTPRequestDataModel *data = [[HTTPRequestDataModel alloc]init];
+    data.baseString = baseURL;
+    data.parameters = nil;
+    [self.manager Head:data success:^(id responseObject) {
         
         NSHTTPURLResponse *response = [(AFHTTPRequestOperation *)responseObject response];
         blockResponseObject = (long)[response statusCode];
@@ -94,6 +107,17 @@
     
     expect(blockResponseObject).will.equal(200);
     expect(blockError).will.beNil();
+}
+
+- (void)testHTTPDownload{
+    NSString *baseURL = @"http://119.81.165.162:8084/BillionsCatalog/home/download_magazine";
+    id mockParameters = OCMStrictClassMock([NSMutableDictionary class]);
+    
+    
+    
+    
+    
+    
 }
 
 

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2C2443BE1C28F83A000AD181 /* AFHTTPSessionManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2443BD1C28F83A000AD181 /* AFHTTPSessionManagerTests.m */; };
 		2C3809F31C2A8C4400FDAD22 /* HTTPRequestOperationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3809F21C2A8C4400FDAD22 /* HTTPRequestOperationTest.m */; };
+		2C3809FA1C2AC48200FDAD22 /* HTTPRequestDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C3809F81C2AC48200FDAD22 /* HTTPRequestDataModel.h */; };
+		2C3809FB1C2AC48200FDAD22 /* HTTPRequestDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3809F91C2AC48200FDAD22 /* HTTPRequestDataModel.m */; };
 		2C4508DE1C252F1F00361758 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4508B91C252F1F00361758 /* AFHTTPRequestOperation.m */; };
 		2C4508DF1C252F1F00361758 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4508BB1C252F1F00361758 /* AFHTTPRequestOperationManager.m */; };
 		2C4508E01C252F1F00361758 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4508BD1C252F1F00361758 /* AFHTTPSessionManager.m */; };
@@ -135,6 +137,8 @@
 /* Begin PBXFileReference section */
 		2C2443BD1C28F83A000AD181 /* AFHTTPSessionManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManagerTests.m; sourceTree = "<group>"; };
 		2C3809F21C2A8C4400FDAD22 /* HTTPRequestOperationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestOperationTest.m; sourceTree = "<group>"; };
+		2C3809F81C2AC48200FDAD22 /* HTTPRequestDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequestDataModel.h; sourceTree = "<group>"; };
+		2C3809F91C2AC48200FDAD22 /* HTTPRequestDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestDataModel.m; sourceTree = "<group>"; };
 		2C4508AB1C252E7300361758 /* libHTTPRequestLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHTTPRequestLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4508B81C252F1F00361758 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		2C4508B91C252F1F00361758 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
@@ -334,6 +338,8 @@
 				2C78AAF51C2920270097FBE4 /* HTTPRequestManager.m */,
 				2C78AB0E1C29414E0097FBE4 /* HttpRequestOperation.h */,
 				2C78AB0F1C29414E0097FBE4 /* HttpRequestOperation.m */,
+				2C3809F81C2AC48200FDAD22 /* HTTPRequestDataModel.h */,
+				2C3809F91C2AC48200FDAD22 /* HTTPRequestDataModel.m */,
 			);
 			path = HTTPRequestManager;
 			sourceTree = "<group>";
@@ -375,6 +381,7 @@
 				2C4509001C252F5000361758 /* UIImageView+AFNetworking.h in Headers */,
 				2C4509011C252F5000361758 /* UIKit+AFNetworking.h in Headers */,
 				2C4509021C252F5000361758 /* UIProgressView+AFNetworking.h in Headers */,
+				2C3809FA1C2AC48200FDAD22 /* HTTPRequestDataModel.h in Headers */,
 				2C4509031C252F5000361758 /* UIRefreshControl+AFNetworking.h in Headers */,
 				2C4509041C252F5000361758 /* UIWebView+AFNetworking.h in Headers */,
 			);
@@ -499,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C4508EC1C252F1F00361758 /* UIProgressView+AFNetworking.m in Sources */,
+				2C3809FB1C2AC48200FDAD22 /* HTTPRequestDataModel.m in Sources */,
 				2C4508E31C252F1F00361758 /* AFURLConnectionOperation.m in Sources */,
 				2C4508EE1C252F1F00361758 /* UIWebView+AFNetworking.m in Sources */,
 				2C78AAF71C2920270097FBE4 /* HTTPRequestManager.m in Sources */,

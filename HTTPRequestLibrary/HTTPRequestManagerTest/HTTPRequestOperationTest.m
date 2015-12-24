@@ -36,8 +36,10 @@
     
     NSString *baseURL = @"https://www.baidu.com";
     HTTPRequestManager *manager = [HTTPRequestManager manager];
-    
-    HttpRequestOperation *operation = [manager PostXml:baseURL parameters:nil success:^(id responseObject) {
+    HTTPRequestDataModel *data = [[HTTPRequestDataModel alloc]init];
+    data.baseString = baseURL;
+    data.parameters = nil;
+    HttpRequestOperation *operation = [manager PostXml:data success:^(id responseObject) {
         blockResponseObject = responseObject;
 //        NSLog(@"%@",responseObject);
     } failure:^(id responseObject, NSError *error) {

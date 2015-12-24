@@ -9,16 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "AFNetworking.h"
 #import "HttpRequestOperation.h"
+#import "HTTPRequestDataModel.h"
 
 @interface HTTPRequestManager : NSObject
 
 + (instancetype)manager;
 
-@property (assign, nonatomic)BOOL supportHttps;
-@property (assign, nonatomic)NSTimeInterval timerOutInterval;
+- (HttpRequestOperation *)PostXml:(HTTPRequestDataModel *)dataModel success:(void (^)(id responseObject))success failure:(void (^)(id responseObject, NSError *error))failure;
 
-- (HttpRequestOperation *)PostXml:(NSString *)urlString parameters:(NSDictionary *)parameters success:(void (^)(id responseObject))success failure:(void (^)(id responseObject, NSError *error))failure;
+- (HttpRequestOperation *)Head:(HTTPRequestDataModel *)dataModel success:(void (^)(id responseObject))success failure:(void (^)(id responseObject, NSError *error))failure;
 
-- (HttpRequestOperation *)Head:(NSString *)urlString parameters:(NSDictionary *)parameters success:(void (^)(id responseObject))success failure:(void (^)(id responseObject, NSError *error))failure;
+- (HttpRequestOperation *)PostDownload:(HTTPRequestDownload *)dataModel success:(void (^)(id responseObject))success failure:(void (^)(id responseObject, NSError *error))failure;
 
+- (HttpRequestOperation *)PostUpload:(HTTPRequestUpload *)dataModel success:(void (^)(id responseObject))success failure:(void (^)(id responseObject, NSError *error))failure;
 @end
