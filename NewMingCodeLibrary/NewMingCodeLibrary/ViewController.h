@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NetReachabilityManager.h"
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) NetReachabilityManager *netReachabilityManager;
 
 @end
 

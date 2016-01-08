@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1FFB321C2BC4570071E4A8 /* HttpRequestOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C78AB0E1C29414E0097FBE4 /* HttpRequestOperation.h */; };
+		2C1FFB331C2BC4570071E4A8 /* HTTPRequestDataModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C3809F81C2AC48200FDAD22 /* HTTPRequestDataModel.h */; };
 		2C2443BE1C28F83A000AD181 /* AFHTTPSessionManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2443BD1C28F83A000AD181 /* AFHTTPSessionManagerTests.m */; };
+		2C26160F1C311BFB00E447B3 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C26160D1C311BFB00E447B3 /* libExpecta.a */; };
+		2C2616101C311BFB00E447B3 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C26160E1C311BFB00E447B3 /* libOCMock.a */; };
+		2C2616111C311C2700E447B3 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C26160D1C311BFB00E447B3 /* libExpecta.a */; };
+		2C2616121C311C2A00E447B3 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C26160E1C311BFB00E447B3 /* libOCMock.a */; };
+		2C2616191C3125ED00E447B3 /* AFNetworkActivityManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2616181C3125ED00E447B3 /* AFNetworkActivityManagerTests.m */; };
+		2C26161B1C312A9E00E447B3 /* AFUIImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C26161A1C312A9E00E447B3 /* AFUIImageViewTests.m */; };
 		2C3809F31C2A8C4400FDAD22 /* HTTPRequestOperationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3809F21C2A8C4400FDAD22 /* HTTPRequestOperationTest.m */; };
 		2C3809FA1C2AC48200FDAD22 /* HTTPRequestDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C3809F81C2AC48200FDAD22 /* HTTPRequestDataModel.h */; };
 		2C3809FB1C2AC48200FDAD22 /* HTTPRequestDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3809F91C2AC48200FDAD22 /* HTTPRequestDataModel.m */; };
@@ -70,16 +78,12 @@
 		2C4509181C252F5800361758 /* UIWebView+AFNetworking.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C4508DC1C252F1F00361758 /* UIWebView+AFNetworking.h */; };
 		2C4509221C252F8B00361758 /* libHTTPRequestLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4508AB1C252E7300361758 /* libHTTPRequestLibrary.a */; };
 		2C4509301C25461100361758 /* AFTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C45092F1C25461100361758 /* AFTestCase.m */; };
-		2C4509441C25497100361758 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4509431C25497100361758 /* libOCMock.a */; };
-		2C4509461C254A8A00361758 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4509451C254A8A00361758 /* libExpecta.a */; };
 		2C4509481C254B9400361758 /* AFHTTPRequestOperationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4509471C254B9400361758 /* AFHTTPRequestOperationTests.m */; };
 		2C78AAF61C2920270097FBE4 /* HTTPRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C78AAF41C2920270097FBE4 /* HTTPRequestManager.h */; };
 		2C78AAF71C2920270097FBE4 /* HTTPRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C78AAF51C2920270097FBE4 /* HTTPRequestManager.m */; };
 		2C78AAF81C2920480097FBE4 /* HTTPRequestManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C78AAF41C2920270097FBE4 /* HTTPRequestManager.h */; };
 		2C78AB001C2923E00097FBE4 /* HTTPRequestManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C78AAFF1C2923E00097FBE4 /* HTTPRequestManagerTest.m */; };
 		2C78AB021C2923E00097FBE4 /* libHTTPRequestLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4508AB1C252E7300361758 /* libHTTPRequestLibrary.a */; };
-		2C78AB0C1C2924080097FBE4 /* libExpecta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4509451C254A8A00361758 /* libExpecta.a */; };
-		2C78AB0D1C29240B0097FBE4 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4509431C25497100361758 /* libOCMock.a */; };
 		2C78AB101C29414E0097FBE4 /* HttpRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C78AB0E1C29414E0097FBE4 /* HttpRequestOperation.h */; };
 		2C78AB111C29414E0097FBE4 /* HttpRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C78AB0F1C29414E0097FBE4 /* HttpRequestOperation.m */; };
 /* End PBXBuildFile section */
@@ -108,6 +112,8 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				2C1FFB321C2BC4570071E4A8 /* HttpRequestOperation.h in CopyFiles */,
+				2C1FFB331C2BC4570071E4A8 /* HTTPRequestDataModel.h in CopyFiles */,
 				2C78AAF81C2920480097FBE4 /* HTTPRequestManager.h in CopyFiles */,
 				2C4509051C252F5700361758 /* AFHTTPRequestOperation.h in CopyFiles */,
 				2C4509061C252F5700361758 /* AFHTTPRequestOperationManager.h in CopyFiles */,
@@ -136,6 +142,10 @@
 
 /* Begin PBXFileReference section */
 		2C2443BD1C28F83A000AD181 /* AFHTTPSessionManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManagerTests.m; sourceTree = "<group>"; };
+		2C26160D1C311BFB00E447B3 /* libExpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libExpecta.a; path = "../expecta/build/Debug-iphoneos/libExpecta.a"; sourceTree = "<group>"; };
+		2C26160E1C311BFB00E447B3 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = "../OCMock/build/Debug-iphoneos/libOCMock.a"; sourceTree = "<group>"; };
+		2C2616181C3125ED00E447B3 /* AFNetworkActivityManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityManagerTests.m; sourceTree = "<group>"; };
+		2C26161A1C312A9E00E447B3 /* AFUIImageViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFUIImageViewTests.m; sourceTree = "<group>"; };
 		2C3809F21C2A8C4400FDAD22 /* HTTPRequestOperationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestOperationTest.m; sourceTree = "<group>"; };
 		2C3809F81C2AC48200FDAD22 /* HTTPRequestDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequestDataModel.h; sourceTree = "<group>"; };
 		2C3809F91C2AC48200FDAD22 /* HTTPRequestDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestDataModel.m; sourceTree = "<group>"; };
@@ -183,8 +193,6 @@
 		2C45092D1C25434700361758 /* HTTPRequestTest.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = HTTPRequestTest.release.xcconfig; sourceTree = "<group>"; };
 		2C45092E1C25461100361758 /* AFTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFTestCase.h; sourceTree = "<group>"; };
 		2C45092F1C25461100361758 /* AFTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFTestCase.m; sourceTree = "<group>"; };
-		2C4509431C25497100361758 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = "../OCMock/build/Debug-iphoneos/libOCMock.a"; sourceTree = "<group>"; };
-		2C4509451C254A8A00361758 /* libExpecta.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libExpecta.a; path = "../expecta/build/Debug-iphoneos/libExpecta.a"; sourceTree = "<group>"; };
 		2C4509471C254B9400361758 /* AFHTTPRequestOperationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationTests.m; sourceTree = "<group>"; };
 		2C78AAF41C2920270097FBE4 /* HTTPRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequestManager.h; sourceTree = "<group>"; };
 		2C78AAF51C2920270097FBE4 /* HTTPRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestManager.m; sourceTree = "<group>"; };
@@ -207,8 +215,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C4509461C254A8A00361758 /* libExpecta.a in Frameworks */,
-				2C4509441C25497100361758 /* libOCMock.a in Frameworks */,
+				2C26160F1C311BFB00E447B3 /* libExpecta.a in Frameworks */,
+				2C2616101C311BFB00E447B3 /* libOCMock.a in Frameworks */,
 				2C4509221C252F8B00361758 /* libHTTPRequestLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,8 +225,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C78AB0D1C29240B0097FBE4 /* libOCMock.a in Frameworks */,
-				2C78AB0C1C2924080097FBE4 /* libExpecta.a in Frameworks */,
+				2C2616121C311C2A00E447B3 /* libOCMock.a in Frameworks */,
+				2C2616111C311C2700E447B3 /* libExpecta.a in Frameworks */,
 				2C78AB021C2923E00097FBE4 /* libHTTPRequestLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,8 +237,8 @@
 		2C4508A21C252E7300361758 = {
 			isa = PBXGroup;
 			children = (
-				2C4509451C254A8A00361758 /* libExpecta.a */,
-				2C4509431C25497100361758 /* libOCMock.a */,
+				2C26160D1C311BFB00E447B3 /* libExpecta.a */,
+				2C26160E1C311BFB00E447B3 /* libOCMock.a */,
 				2C45092B1C25431E00361758 /* Configuration */,
 				2C4508AD1C252E7300361758 /* HTTPRequestLibrary */,
 				2C45091E1C252F8B00361758 /* HTTPRequestTest */,
@@ -317,6 +325,8 @@
 				2C45092F1C25461100361758 /* AFTestCase.m */,
 				2C4509471C254B9400361758 /* AFHTTPRequestOperationTests.m */,
 				2C2443BD1C28F83A000AD181 /* AFHTTPSessionManagerTests.m */,
+				2C2616181C3125ED00E447B3 /* AFNetworkActivityManagerTests.m */,
+				2C26161A1C312A9E00E447B3 /* AFUIImageViewTests.m */,
 				2C4509211C252F8B00361758 /* Info.plist */,
 			);
 			path = HTTPRequestTest;
@@ -533,7 +543,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C2443BE1C28F83A000AD181 /* AFHTTPSessionManagerTests.m in Sources */,
+				2C26161B1C312A9E00E447B3 /* AFUIImageViewTests.m in Sources */,
 				2C4509301C25461100361758 /* AFTestCase.m in Sources */,
+				2C2616191C3125ED00E447B3 /* AFNetworkActivityManagerTests.m in Sources */,
 				2C4509481C254B9400361758 /* AFHTTPRequestOperationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor redColor];
+    _netReachabilityManager = [NetReachabilityManager sharedManager];
+    [self.netReachabilityManager beginNetworkConfiguratioin:^(NetworkStatus statue, BOOL success) {
+        if (success) {
+            NSLog(@"***%@",[[NetReachabilityManager sharedManager].networkConfig currcentHTTPInterface]);
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

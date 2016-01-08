@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:XMLDataAnalysis/XMLDataAnalysis.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BaseModelLibrary/BaseModelLibrary.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NetWorkConfiguration/NetWorkConfiguration.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:expecta/Expecta.xcodeproj">
    </FileRef>
    <FileRef

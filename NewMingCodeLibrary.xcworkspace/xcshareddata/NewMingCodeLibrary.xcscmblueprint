@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "123FCED7442B7650BCC29916BF9EBFA8339F67B8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "5c308101-5efd-9a40-8941-31ed0a45c523++597" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "123FCED7442B7650BCC29916BF9EBFA8339F67B8" : 0,
+    "5c308101-5efd-9a40-8941-31ed0a45c523++597" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D638AE61-EA95-4A92-920A-4434FF9099E5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "123FCED7442B7650BCC29916BF9EBFA8339F67B8" : "NewMingCodeLibrary\/",
+    "5c308101-5efd-9a40-8941-31ed0a45c523++597" : "..\/LehoCode\/SVN\/Versions_SVN\/20151118\/MonkeyKing"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NewMingCodeLibrary",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NewMingCodeLibrary.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/carinofan\/NewMingCodeLibrary.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "123FCED7442B7650BCC29916BF9EBFA8339F67B8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.3.200\/svn\/IPad",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5c308101-5efd-9a40-8941-31ed0a45c523++597"
+    }
+  ]
+}

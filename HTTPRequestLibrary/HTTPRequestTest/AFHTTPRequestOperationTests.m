@@ -373,9 +373,12 @@
         BOOL no = NO;
 //        [[[mockStream stub] andReturnValue:OCMOCK_VALUE(no)]hasSpaceAvailable];
         OCMStub([mockStream hasSpaceAvailable]).andReturn(no);
-        [[mockStream stub] scheduleInRunLoop:OCMOCK_ANY forMode:OCMOCK_ANY];
-        [[mockStream stub] open]; 
-        [[mockStream stub] close];
+        OCMStub([mockStream scheduleInRunLoop:OCMOCK_ANY forMode:OCMOCK_ANY]);
+        OCMStub([mockStream open]);
+        OCMStub([mockStream close]);
+//        [[mockStream stub] scheduleInRunLoop:OCMOCK_ANY forMode:OCMOCK_ANY];
+//        [[mockStream stub] open];
+//        [[mockStream stub] close];
         
         mockStream;
     })];

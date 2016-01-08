@@ -1,0 +1,8 @@
+//
+//  XMLDataAnalysis.xcconfig
+//  XMLDataAnalysis
+//
+//  Created by Fanming on 15/11/10.
+//  Copyright © 2015年 Guangzhou Ligo Information Technology Co.,Ltd. All rights reserved.
+//
+HEADER_SEARCH_PATHS = $(SDKROOT)/usr/include/libxml2

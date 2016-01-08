@@ -32,9 +32,11 @@
     [operationManager.requestSerializer setTimeoutInterval:dataModel.timerOutInterval];
     
     AFHTTPRequestOperation *operationReqeust = [operationManager HEAD:dataModel.baseString parameters:dataModel.parameters success:^(AFHTTPRequestOperation * _Nonnull operation) {
-        success(operation);
+        NSHTTPURLResponse *response = [operation response];
+        success(response);
     } failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error) {
-        failure(operation, error);
+        NSHTTPURLResponse *response = [operation response];
+        failure(response, error);
     }];
     
     HttpRequestOperation *httpOperation = [[HttpRequestOperation alloc]initWithOperation:operationReqeust];
